@@ -69,8 +69,9 @@ export const Posts = () => {
             <p></p>
             <button type="" onClick={() => {loadTogether()}} className='classButton common'>{clickButton}</button>
         </Box>
-        
-        <h2 className="common">Список пользователей:</h2>
+        <p></p>
+        <TextHead className="common">Список пользователей:</TextHead>
+        <p></p>
 
         <div className="div common">
             {users.length > 0 && users.map(user => {

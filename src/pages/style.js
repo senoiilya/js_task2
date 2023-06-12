@@ -127,6 +127,6 @@ export const TextLink = styled.span`
     cursor: pointer;
 `
 export const TextHead = styled.span`
-    color: #F0CC19;
+    color: #000;
     font-size: 24px;
 `

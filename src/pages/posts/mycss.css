@@ -45,7 +45,6 @@
   span {
     color: blue;
     font-size: 16px;
-    ;
   }
   
   details > summary {
@@ -57,10 +56,6 @@
     list-style: square;
   }
   
-  /* details:hover {
-    background-color: #029c2b;
-    transition: 0.7;
-  } */
   
   details[open] > summary {
     color:#eee; 
