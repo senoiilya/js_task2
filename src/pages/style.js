@@ -22,6 +22,45 @@ export const LoginForm = styled.div`
     margin: 15px; 
     background-color: #29BE0E
 `
+export const HeaderForm = styled.div`
+    background: #29BE0E; 
+`
+// Можно отдельно вынести стили для тегов ul и il
+export const Navigate = styled.div`
+
+    background-color: #247416;
+    border: 2px solid #F0CC19;
+
+    & li {
+        float: left;
+        list-style-type: none;
+        display: block;
+        padding: 10px 25px;
+        margin-right: 10px;
+        text-decoration: none;
+        border-right: 2px solid #F0CC19;
+    }
+
+    & Button {
+        color: #878787;
+        background: #29BE0E;
+    }
+
+    & li:last-child {
+        border-right: none;
+    }
+
+    &:after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+  
+    & ul {
+        max-width: 1200px;
+        margin: auto; 
+    }
+`
 
 export const Input = styled.input`
     width: 300px;
@@ -46,7 +85,8 @@ export const Button = styled.button`
 
     &:hover {           
         color: #fff;
-        background: #F88A30; 
+        background: #F88A30;
+        font-weight: bold;
     }
 
     &:active {
@@ -69,6 +109,12 @@ export const Text = styled.span`
     color: #fff;
     font-size: 14px;
 `
+
+export const MainText = styled.span`
+    color: #F0CC19;
+    font-size: 24px;
+`
+
 export const TextLink = styled.span`
     font-size: 14px;
     font-weight: 600;

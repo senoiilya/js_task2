@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button, H1, MainLayout } from "../style";
+import { Button, H1, MainLayout, HeaderForm, Navigate } from "../style";
 
 const User = () => {
 
@@ -23,7 +23,17 @@ const User = () => {
 
   return (
     <>
-         <MainLayout>
+        <HeaderForm>
+            <H1>Второе задание по JS</H1>
+            <Navigate>
+                <ul>
+                    <li><Button onClick={() => navigate("/")}>Главная</Button></li>
+                    <li style={{visibility: 'hidden'}}><Button onClick={() => navigate("/")}>Войти</Button></li>
+                    <li style={{visibility: 'hidden'}}><Button onClick={() => navigate("/")}>Зарегистрироваться</Button></li>
+                </ul>
+            </Navigate>
+        </HeaderForm>
+        <MainLayout>
             {user &&
             <>
                 <H1>
