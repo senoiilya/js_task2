@@ -25,6 +25,11 @@ export const LoginForm = styled.div`
 export const HeaderForm = styled.div`
     background: #29BE0E; 
 `
+
+export const PostsBackgroundColor = styled.div`
+    background-color: #B4DFA4;
+
+`
 // Можно отдельно вынести стили для тегов ul и il
 export const Navigate = styled.div`
 
@@ -46,9 +51,9 @@ export const Navigate = styled.div`
         background: #29BE0E;
     }
 
-    & li:last-child {
-        border-right: none;
-    }
+    // & li:last-child {
+    //     border-right: none;
+    // }
 
     &:after {
         content: " ";
@@ -57,7 +62,7 @@ export const Navigate = styled.div`
     }
   
     & ul {
-        max-width: 1200px;
+        max-width: 1560px;
         margin: auto; 
     }
 `
@@ -120,4 +125,8 @@ export const TextLink = styled.span`
     font-weight: 600;
     color: #F0CC19; 
     cursor: pointer;
+`
+export const TextHead = styled.span`
+    color: #F0CC19;
+    font-size: 24px;
 `

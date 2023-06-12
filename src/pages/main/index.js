@@ -26,6 +26,9 @@ export const Main = () => {
           <li><Button onClick={() => navigate("/")}>Главная</Button></li>
           <li><Button onClick={() => navigate("/login")}>Войти</Button></li>
           <li><Button onClick={() => navigate("/signin")}>Зарегистрироваться</Button></li>
+          <li><Button onClick={() => navigate("/posts")}>Посты пользователей</Button></li>
+          <li><Button style={{visibility: 'hidden'}}></Button></li>
+          <li><Button style={{visibility: 'hidden'}}></Button></li>
         </ul>
       </Navigate>
     </HeaderForm>

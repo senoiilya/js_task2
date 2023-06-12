@@ -2,9 +2,10 @@ import { Route, Routes } from "react-router-dom";
 import { Slide, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { Main } from "./pages/main";
-import  User  from "./pages/user";
+import User  from "./pages/user";
 import Login from "./pages/login";
 import SignIn from "./pages/signIn";
+import Posts from "./pages/posts";
 
 const App = () => (
   <>
@@ -13,6 +14,7 @@ const App = () => (
       <Route element={<User />} path='/user'/>
       <Route element={<Login />} path='/login'/>
       <Route element={<SignIn />} path='/signin'/>
+      <Route element={<Posts />} path='/posts'></Route>
     </Routes>
     <ToastContainer
         position="top-center"
